@@ -57,7 +57,7 @@ direction= "left"scrollamount="20" ><img src="logo.jpg"width="50"height="50">MAT
   	}
   	</style>
   	<style>
-  	#men{
+  					#men{
  	background-color:red;
  	font-size:20px;
  	color: white;
@@ -146,8 +146,8 @@ float:right;
        <ul>
          <li><a href="#"> Home </a></li>
           <li><a href="book1.html"> MATWANA BOOKING </a></li>
-         <li><a href="login.html">Sign up an Login </a></li>
-         <li><a href="about us.html"> About us </a></li>
+   
+       <li><a href="about us.html"> About us </a></li>
          <li><a href="contact.html"> Contact Us </a></li>
          <li><a href="more.html">More</a></li>
          <li><a href="services.html">Services </a></li>
@@ -160,9 +160,9 @@ float:right;
    
    <br>	  
    	 <nav>
-   <button id="men" onclick=menuopen()>SIGN UP</button>
+   <button id="men" onclick=signupopen()>SIGN UP</button>
     <div id="navlin">
-       <button onclick=menuclose()>X</button>
+       <button onclick=signupclose()>X</button>
        <ul>
        				<li><a href="login1.html">Sign up an Login </a></li>
        				</ul>
@@ -524,14 +524,14 @@ Sound installation was done by AUDIO PLAY.It is equipped with 10 12" mid-subs an
        }
      </script>
      <script>
-     function menuopen(){
+     function signupopen(){
        document.getElementById("navlin").style.display="block";
        document.getElementById("men").style.display="none";
        
      }
      
      
-       function menuclose(){
+       function signupclose(){
          document.getElementById("navlin").style.display="none";
          
        
