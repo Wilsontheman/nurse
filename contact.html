@@ -33,7 +33,42 @@ In order to resolve a complaint regarding the Site or to receive further informa
 <h1>[0707738549]<h1>
 
 <h1><a href="mailto: last99born@gmail.com">[contact email]</a></h1>
+<h2>CONTACT US</h2>
+ 	<form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+<tr> <td>
+<label for="Name"><h2>Name*:</h2></label>
+</td> <td>
+<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="PhoneNumber"><h2>Phone number:</h2></label>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="FromEmailAddress"><h2>Email address*:</h2></label>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="Comments"><h2>Comments*:</h2></label>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+</td> </tr> <tr> <td>
+</td> <td>
+<input name="skip_Submit" type="submit" value="Submit" />
+<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">zzzzz</a></div>
 
+<script src="https://www.100forms.com/js/FORMKEY:HWWB3XN8YBR2/SEND:last99born@gmail.com" type="text/javascript"></script>
+</td> </tr>
+</table>
+</form>
 
 
 
