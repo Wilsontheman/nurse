@@ -7,7 +7,7 @@
   
   <hr>
   <title>MATATU CULTURE AND ROADTRIP BOOKING</title>
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" lhref="http://www.w3schools.com/lib/w3.css">
 
   <p id="demo"></p>
 
@@ -18,7 +18,7 @@
  
   </head>		
 
-  <body background="polish.jpg">
+  <body background="tech.jpg">
    <div id="name"><marquee behavior="scroll"
 direction= "left"scrollamount="20" ><img src="logo.jpg"width="50"height="50">MATATU CULTURE ROADTRIP BOOKING<img src="9.jpg"width="50"height="40"></marquee></div>
   <hr>
@@ -56,6 +56,24 @@ direction= "left"scrollamount="20" ><img src="logo.jpg"width="50"height="50">MAT
   	width:100%;
   	}
   	</style>
+  	<style>
+  					#men{
+ 	background-color:red;
+ 	font-size:20px;
+ 	color: white;
+ 	float:right;
+ 	
+ 	}
+  	
+#navlin{
+font-size:20px;
+background-color:red;
+  padding:5px;
+  display: none;
+  width:20%;
+  float:right;
+  }
+  	</style>
   <style>
  	#butmen{
  	background-color:red;
@@ -66,7 +84,7 @@ direction= "left"scrollamount="20" ><img src="logo.jpg"width="50"height="50">MAT
   	
 #navlinks{
 font-size:20px;
-color:green;
+background-color:red;
   padding:10px;
   display: none;
   width:20%;
@@ -128,7 +146,7 @@ float:right;
        <ul>
          <li><a href="#"> Home </a></li>
           <li><a href="book1.html"> MATWANA BOOKING </a></li>
-         <li><a href="login.html">Sign up an Login </a></li
+         <li><a href="login.html">Sign up an Login </a></li>
          <li><a href="about us.html"> About us </a></li>
          <li><a href="contact.html"> Contact Us </a></li>
          <li><a href="more.html">More</a></li>
@@ -141,6 +159,15 @@ float:right;
    </nav>
    
    <br>	  
+   	 <nav>
+   <button id="men" onclick=menuopen()>SIGN UP</button>
+    <div id="navlin">
+       <button onclick=menuclose()>X</button>
+       <ul>
+       				<li><a href="login1.html">Sign up an Login </a></li>
+       				</ul>
+       				</div>
+       				</nav>
    <div id="pic"><img src="mc.jpg"width="70"height="50">
    </div>
    <br>
@@ -494,6 +521,21 @@ Sound installation was done by AUDIO PLAY.It is equipped with 10 12" mid-subs an
          
        
          document.getElementById("butmen").style.display="block";
+       }
+     </script>
+     <script>
+     function menuopen(){
+       document.getElementById("navlin").style.display="block";
+       document.getElementById("men").style.display="none";
+       
+     }
+     
+     
+       function menuclose(){
+         document.getElementById("navlin").style.display="none";
+         
+       
+         document.getElementById("men").style.display="block";
        }
      </script>
 </html>
